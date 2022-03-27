@@ -140,14 +140,9 @@ body .navbar-light .navbar-nav .nav-link.active:hover {
   display: flex;
   justify-content: space-between;
 }
-.item-1 .col-3 {
-  width: auto;
-}
-.item-1 .col-3 img {
-  width: 241px;
-}
-.item-1 .col-3 .txt {
-  width: 200px;
+.item-1 .col-3 .qqq {
+  display: flex;
+  justify-content: center;
 }
 .item-1 .col-3 .txt h3 {
   margin: 15px 0;

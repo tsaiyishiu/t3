@@ -135,13 +135,17 @@ body .navbar-light .navbar-nav .nav-link.active:hover{
     display: flex;
     justify-content: space-between;
     .col-3{
-       width: auto;
+        /*.qqq{
+            display: flex;
+            justify-content: center;*/
+        }
+       //width: auto;
         img{
-            width: 241px;
+            //width: 241px;
         
         }
         .txt{
-            width: 200px;
+            //width: 200px;
             h3{
                 margin: 15px 0;
                 color: brown;
