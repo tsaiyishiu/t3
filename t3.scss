@@ -74,28 +74,38 @@ body .navbar-light .navbar-nav .nav-link.active:hover{
     background-color: rgb(53, 102, 24);
     display: flex;
     position: relative;
+    padding-bottom: 10px;
+    //padding: 15px;
     .col-4{
         div{
+            padding: 10px 10px 10px 30px;
             float: right;
-            width: 50%;
-            padding: 30px;
-            padding-left: 10px;
+            width: 70%;
+            //padding: 30px;
+            //padding-left: 10px;
             
 
             h1{
                 font-size: 20px;
                 color: yellow;
+                margin: 0;
+                padding-bottom: 5px;
             }
             p{
                 font-size: 15px;
                 color: aliceblue;
+                line-height: 1.1;
+                font-size: 5px;
             }
         }
         img{
+            border: solid 2px white;
             float: left;
-            width: 50%;
-            padding:30px;
-            padding-right: 0; 
+            width: 30%;
+            margin-top: 10px;
+            transform: translateX(15px);
+            //padding:30px;
+            //padding-right: 0; 
         }
     }
 }
@@ -103,9 +113,38 @@ body .navbar-light .navbar-nav .nav-link.active:hover{
     position: absolute;
     content:'';
     border-left: 3px solid rgb(4, 58, 8);
-    height: 236px;
-    top: 20px;
-    
-    
-    
+    height: 90px;
+    top: 5px;
+}
+.main{
+    background: rgb(254, 254, 254);
+    margin: 20px;
+    h2{
+        background:rgb(218, 235, 208);
+        margin: 0;
+        margin-bottom: 20px;
+        height: 45px;
+        border-bottom: solid 1px rgb(59, 90, 59);
+        color: brown;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+    }
+}
+.item-1{
+    display: flex;
+    justify-content: space-between;
+    .col-3{
+       width: auto;
+        img{
+            width: 241px;
+        }
+        .txt{
+            width: 200px;
+            h3{
+                margin: 15px 0;
+                color: brown;
+            }
+        }
+    }
 }
