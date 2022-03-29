@@ -1,12 +1,19 @@
 body{
     width: 100%;
+    max-width: 1024px;
+    margin: auto;
+    background: rgb(219, 219, 211);
     border: solid rgb(53, 102, 24) 10px;
+    border-bottom: 0;
+    
+    
 }
 .header{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100px;
+    background: rgb(254, 254, 254);
 }
 .navigation{
     background-color: rgb(75, 75, 75);
@@ -17,7 +24,7 @@ body{
 body .navbar-nav{
     width: 100%;
     justify-content: space-around;
-    padding: 0 100px 0;
+    
 }
  .navbar-expand-md{
     width: 100%;
@@ -68,6 +75,12 @@ body .navbar-light .navbar-nav .nav-link.active:hover{
     p{
         margin: 0;
         color: aliceblue;
+        i{
+            color: gainsboro;
+            background: aliceblue;
+            border-radius: 10px;
+            
+        }
     }
 }
 .item{
@@ -118,7 +131,7 @@ body .navbar-light .navbar-nav .nav-link.active:hover{
 }
 .main{
     background: rgb(254, 254, 254);
-    margin: 20px;
+    padding: 20px;
     position: relative;
     h2{
         background:rgb(218, 235, 208);
@@ -135,13 +148,15 @@ body .navbar-light .navbar-nav .nav-link.active:hover{
 .item-1{
     display: flex;
     justify-content: space-between;
-    .col-3{
+    .col-2{
+        width: 23%;
         /*.qqq{
             display: flex;
             justify-content: center;*/
         }
        //width: auto;
         img{
+            width: 100%;
             //width: 241px;
         
         }
@@ -178,6 +193,11 @@ body .navbar-light .navbar-nav .nav-link.active:hover{
         margin-bottom: 30px;
     }
     ol{
+        height: 86%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
         margin: 0;
         li{
             font-size: 10px;
@@ -194,9 +214,9 @@ body .navbar-light .navbar-nav .nav-link.active:hover{
     content:'';
     border-top: solid 2px rgba(163, 152, 152, 0.493);
     
-    width: 100%;
+    width: calc( 100% - 40px );
     height: 100px;
-    top: 434px;
+    top: 465px;
 }
 .service{
     background: rgb(218, 235, 208);
@@ -235,4 +255,13 @@ body .navbar-light .navbar-nav .nav-link.active:hover{
             }
         }
     }
+}
+.copy{
+    background: rgb(53, 102, 24);
+    text-align: center;
+    p{
+        margin: 0;
+        color: aliceblue;
+    }
+    
 }
