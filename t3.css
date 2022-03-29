@@ -5,6 +5,7 @@ body {
   background: #dbdbd3;
   border: solid #356618 10px;
   border-bottom: 0;
+  background-image: url(./pic/bg-body.jpg);
 }
 
 .header {
@@ -150,8 +151,13 @@ body .navbar-light .navbar-nav .nav-link.active:hover {
   display: flex;
   justify-content: space-between;
 }
-.item-1 .col-2 {
-  width: 23%;
+.item-1 .row {
+  margin: 0 -10px;
+}
+.item-1 .row .col-3 {
+  padding: 0 10px;
+}
+.item-1 .col-3 {
   /*.qqq{
       display: flex;
       justify-content: center;*/
@@ -209,7 +215,7 @@ body .navbar-light .navbar-nav .nav-link.active:hover {
   border-top: solid 2px rgba(163, 152, 152, 0.493);
   width: calc(100% - 40px);
   height: 100px;
-  top: 465px;
+  top: 57%;
 }
 
 .service {

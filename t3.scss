@@ -5,6 +5,7 @@ body{
     background: rgb(219, 219, 211);
     border: solid rgb(53, 102, 24) 10px;
     border-bottom: 0;
+    background-image: url(./pic/bg-body.jpg);
     
     
 }
@@ -148,8 +149,25 @@ body .navbar-light .navbar-nav .nav-link.active:hover{
 .item-1{
     display: flex;
     justify-content: space-between;
-    .col-2{
-        width: 23%;
+    
+    .row {
+        margin: 0 -10px;
+        .col-3 {
+            padding: 0 10px;
+            // &:nth-child(1){
+            //     padding-right: 10px;
+            // }
+            // &:nth-last-child(1){
+            //     padding-left: 10px;
+            // }
+            // &:not(&:nth-child(1), &:nth-last-child(1)){
+            //     padding: 0 10px;
+            // }
+        }
+    }
+    
+  
+    .col-3{
         /*.qqq{
             display: flex;
             justify-content: center;*/
@@ -216,7 +234,7 @@ body .navbar-light .navbar-nav .nav-link.active:hover{
     
     width: calc( 100% - 40px );
     height: 100px;
-    top: 465px;
+    top: 57%;
 }
 .service{
     background: rgb(218, 235, 208);
