@@ -17,6 +17,7 @@ body{
     background: rgb(254, 254, 254);
     img{
         width: 100%;
+        
     }
 }
 .navigation{
@@ -24,6 +25,9 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 .container-fluid{
     z-index: 1;
@@ -69,7 +73,8 @@ body .navbar-light .navbar-nav .nav-link.active:hover{
 
 .banner img{
     width: 100%;
-    height: 70%;
+    height: 70vh;
+    object-fit: cover;
 }
 .banner-txt{
     position: absolute;
@@ -94,10 +99,12 @@ body .navbar-light .navbar-nav .nav-link.active:hover{
 .item{
     background-color: rgb(53, 102, 24);
     display: flex;
+    flex-direction: column;
     position: relative;
     padding-bottom: 10px;
     //padding: 15px;
     .col-lg-4{
+        
         div{
             padding: 10px 10px 10px 30px;
             float: right;
@@ -195,6 +202,7 @@ body .navbar-light .navbar-nav .nav-link.active:hover{
     }
 .container-1{
     display: flex;
+    flex-direction: column;
     margin: 0;
     padding-top: 50px;
     .container-txt{
@@ -203,8 +211,7 @@ body .navbar-light .navbar-nav .nav-link.active:hover{
     }
     img{
         //display: inline-block;
-        width: 50%;
-        height: 50%;
+       
     }
     h3{
         background: rgb(218, 235, 208);
@@ -214,14 +221,16 @@ body .navbar-light .navbar-nav .nav-link.active:hover{
         display: flex;
         align-items: center;
         padding-left: 20px;
-        margin-left: 20px;
+        //margin-left: 20px;
         margin-bottom: 30px;
+        margin-top: 20px;
     }
     ol{
         height: 86%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        padding-left: 20px;
 
         margin: 0;
         li{
@@ -234,15 +243,15 @@ body .navbar-light .navbar-nav .nav-link.active:hover{
     }
 
 }
-.container-1::before{
-    position: absolute;
-    content:'';
-    border-top: solid 2px rgba(163, 152, 152, 0.493);
+//.container-1::before{
+    //position: absolute;
+    //content:'';
+    //border-top: solid 2px rgba(163, 152, 152, 0.493);
     
-    width: calc( 100% - 40px );
-    height: 100px;
-    top: 57%;
-}
+    //width: calc( 100% - 40px );
+    //height: 100px;
+    //top: 65%;
+//}
 .service{
     background: rgb(218, 235, 208);
     
@@ -251,7 +260,7 @@ body .navbar-light .navbar-nav .nav-link.active:hover{
     //justify-content: space-between;
     .row{
         
-        .col-3{
+        .col-12{
             padding: 20px;
             border: solid  rgba(97, 93, 93, 0.548) 1px;
             h4{
@@ -318,6 +327,9 @@ body .navbar-light .navbar-nav .nav-link.active:hover{
         display: flex;
         justify-content: space-around;
         align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 1;
     }
     body .navbar-nav{
         width: 100%;
@@ -384,10 +396,12 @@ body .navbar-light .navbar-nav .nav-link.active:hover{
     .item{
         background-color: rgb(53, 102, 24);
         display: flex;
+        flex-direction: row;
         position: relative;
-        padding-bottom: 10px;
+        padding-bottom: 0;
         //padding: 15px;
         .col-lg-4{
+            
             div{
                 padding: 10px 10px 10px 30px;
                 float: right;
@@ -508,6 +522,7 @@ body .navbar-light .navbar-nav .nav-link.active:hover{
             padding-left: 20px;
             //margin-left: 20px;
             margin-bottom: 30px;
+            margin-left: 0;
         }
         ol{
             height: 86%;
@@ -534,7 +549,7 @@ body .navbar-light .navbar-nav .nav-link.active:hover{
         
         width: calc( 100% - 40px );
         height: 100px;
-        top: 64%;
+        top: 63%;
     }
     .service{
         background: rgb(218, 235, 208);
@@ -544,7 +559,7 @@ body .navbar-light .navbar-nav .nav-link.active:hover{
         //justify-content: space-between;
         .row{
             
-            .col-3{
+            .col-md-3{
                 padding: 20px;
                 border: solid  rgba(97, 93, 93, 0.548) 1px;
                 h4{
@@ -610,6 +625,9 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 body .navbar-nav{
     width: 100%;
@@ -777,6 +795,7 @@ body .navbar-light .navbar-nav .nav-link.active:hover{
     }
 .container-1{
     display: flex;
+    flex-direction: row;
     margin: 0;
     padding-top: 50px;
     .container-txt{
@@ -798,12 +817,14 @@ body .navbar-light .navbar-nav .nav-link.active:hover{
         padding-left: 20px;
         margin-left: 20px;
         margin-bottom: 30px;
+        margin-top: 0;
     }
     ol{
         height: 86%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        padding-left: 40px;
 
         margin: 0;
         li{
@@ -823,7 +844,7 @@ body .navbar-light .navbar-nav .nav-link.active:hover{
     
     width: calc( 100% - 40px );
     height: 100px;
-    top: 57%;
+    top: 56%;
 }
 .service{
     background: rgb(218, 235, 208);
@@ -833,7 +854,7 @@ body .navbar-light .navbar-nav .nav-link.active:hover{
     //justify-content: space-between;
     .row{
         
-        .col-3{
+        .col-lg-3{
             padding: 20px;
             border: solid  rgba(97, 93, 93, 0.548) 1px;
             h4{
