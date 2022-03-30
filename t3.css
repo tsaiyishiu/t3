@@ -1,3 +1,257 @@
+body {
+  width: 100%;
+  max-width: 1024px;
+  margin: auto;
+  background: #dbdbd3;
+  border: solid #356618 10px;
+  border-bottom: 0;
+  background-image: url(./pic/bg-body.jpg);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background: #fefefe;
+}
+.header img {
+  width: 100%;
+}
+
+.navigation {
+  background-color: #4b4b4b;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container-fluid {
+  z-index: 1;
+  background: #4b4b4b;
+}
+
+body .navbar-nav {
+  width: 100%;
+  justify-content: space-around;
+}
+
+.navbar-expand-md {
+  width: 100%;
+  padding: 0;
+  height: 80px;
+}
+
+body .navbar-light .navbar-nav .nav-link {
+  color: bisque;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body .navbar-light .navbar-nav .nav-link:hover {
+  background-color: #daebd0;
+  color: #356618;
+}
+
+body .navbar-light .navbar-nav .nav-link.active {
+  color: bisque;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body .navbar-light .navbar-nav .nav-link.active:hover {
+  background-color: #daebd0;
+  color: #356618;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  height: 70%;
+}
+
+.banner-txt {
+  position: absolute;
+  bottom: 0;
+  height: 150px;
+  background-color: rgba(34, 32, 32, 0.555);
+  padding: 10px;
+}
+.banner-txt h1 {
+  color: yellow;
+}
+.banner-txt p {
+  margin: 0;
+  color: aliceblue;
+}
+.banner-txt p i {
+  color: gainsboro;
+  background: aliceblue;
+  border-radius: 10px;
+}
+
+.item {
+  background-color: #356618;
+  display: flex;
+  position: relative;
+  padding-bottom: 10px;
+}
+.item .col-lg-4 div {
+  padding: 10px 10px 10px 30px;
+  float: right;
+  width: 70%;
+}
+.item .col-lg-4 div h1 {
+  font-size: 20px;
+  color: yellow;
+  margin: 0;
+  padding-bottom: 5px;
+}
+.item .col-lg-4 div p {
+  font-size: 15px;
+  color: aliceblue;
+  line-height: 1.1;
+  font-size: 5px;
+}
+.item .col-lg-4 img {
+  border: solid 2px white;
+  float: left;
+  width: 30%;
+  margin-top: 10px;
+  transform: translateX(15px);
+}
+
+.solid::before {
+  position: absolute;
+  content: "";
+  border-left: 3px solid #043a08;
+  height: calc(100% - 10px);
+  top: 5px;
+}
+
+.main {
+  background: #fefefe;
+  padding: 20px;
+  position: relative;
+}
+.main h2 {
+  background: #daebd0;
+  margin: 0;
+  margin-bottom: 20px;
+  height: 45px;
+  border-bottom: solid 1px #3b5a3b;
+  color: brown;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.item-1 {
+  display: flex;
+  justify-content: space-between;
+}
+.item-1 .row {
+  margin: 0 -10px;
+}
+.item-1 .row .col-lg-3 {
+  padding: 0 10px;
+}
+.item-1 .col-lg-3 {
+  /*.qqq{
+      display: flex;
+      justify-content: center;*/
+}
+.item-1 img {
+  width: 100%;
+}
+.item-1 .txt h3 {
+  margin: 15px 0;
+  color: brown;
+}
+
+.container-1 {
+  display: flex;
+  margin: 0;
+  padding-top: 50px;
+}
+.container-1 img {
+  width: 50%;
+  height: 50%;
+}
+.container-1 h3 {
+  background: #daebd0;
+  color: brown;
+  border-bottom: solid 1px #3b5a3b;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+.container-1 ol {
+  height: 86%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0;
+}
+.container-1 ol li {
+  font-size: 10px;
+}
+.container-1 ol li p {
+  line-height: 2;
+  padding-left: 10px;
+}
+
+.container-1::before {
+  position: absolute;
+  content: "";
+  border-top: solid 2px rgba(163, 152, 152, 0.493);
+  width: calc(100% - 40px);
+  height: 100px;
+  top: 57%;
+}
+
+.service {
+  background: #daebd0;
+}
+.service .row .col-3 {
+  padding: 20px;
+  border: solid rgba(97, 93, 93, 0.548) 1px;
+}
+.service .row .col-3 h4 {
+  padding-bottom: 20px;
+  color: rgba(97, 93, 93, 0.548);
+}
+.service .row .col-3 p {
+  line-height: 5px;
+  color: rgba(97, 93, 93, 0.548);
+}
+.service .row .col-3 .friendlink div p i {
+  padding-right: 5px;
+  font-size: 20px;
+  color: #356618;
+}
+
+.copy {
+  background: #356618;
+  text-align: center;
+}
+.copy p {
+  margin: 0;
+  color: aliceblue;
+}
+
 @media (min-width: 768px) {
   body {
     width: 100%;
@@ -15,6 +269,9 @@
     align-items: center;
     height: 100px;
     background: #fefefe;
+  }
+  .header img {
+    width: auto;
   }
 
   .navigation {
@@ -264,6 +521,9 @@
     align-items: center;
     height: 100px;
     background: #fefefe;
+  }
+  .header img {
+    width: auto;
   }
 
   .navigation {
