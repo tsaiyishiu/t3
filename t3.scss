@@ -1,3 +1,296 @@
+
+
+
+@media (min-width: 768px){
+    body{
+        width: 100%;
+        max-width: 1024px;
+        margin: auto;
+        background: rgb(219, 219, 211);
+        border: solid rgb(53, 102, 24) 10px;
+        border-bottom: 0;
+        background-image: url(./pic/bg-body.jpg);
+        
+        
+    }
+    .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        background: rgb(254, 254, 254);
+    }
+    .navigation{
+        background-color: rgb(75, 75, 75);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    body .navbar-nav{
+        width: 100%;
+        justify-content: space-around;
+        
+    }
+     .navbar-expand-md{
+        width: 100%;
+       padding: 0;
+       height: 80px;
+    }
+    body .navbar-light .navbar-nav .nav-link{
+        color: bisque;
+        height: 80px;
+        width: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    body .navbar-light .navbar-nav .nav-link:hover{
+        background-color: rgb(218, 235, 208);
+        color: rgb(53, 102, 24);
+    }
+    body .navbar-light .navbar-nav .nav-link.active{
+        color: bisque;
+        height: 80px;
+        width: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    body .navbar-light .navbar-nav .nav-link.active:hover{
+        background-color: rgb(218, 235, 208);
+        color: rgb(53, 102, 24);
+    } 
+    .banner{
+        position: relative;
+    }
+    
+    .banner img{
+        width: 100%;
+        height: 70%;
+    }
+    .banner-txt{
+        position: absolute;
+        bottom: 0;
+        height: 150px;
+        background-color: rgba(34, 32, 32, 0.555);
+        padding: 10px;
+        h1{
+            color: yellow;
+        }
+        p{
+            margin: 0;
+            color: aliceblue;
+            i{
+                color: gainsboro;
+                background: aliceblue;
+                border-radius: 10px;
+                
+            }
+        }
+    }
+    .item{
+        background-color: rgb(53, 102, 24);
+        display: flex;
+        position: relative;
+        padding-bottom: 10px;
+        //padding: 15px;
+        .col-lg-4{
+            div{
+                padding: 10px 10px 10px 30px;
+                float: right;
+                width: 70%;
+                //padding: 30px;
+                //padding-left: 10px;
+                
+    
+                h1{
+                    font-size: 20px;
+                    color: yellow;
+                    margin: 0;
+                    padding-bottom: 5px;
+                }
+                p{
+                    font-size: 15px;
+                    color: aliceblue;
+                    line-height: 1.1;
+                    font-size: 5px;
+                }
+            }
+            img{
+                border: solid 2px white;
+                float: left;
+                width: 30%;
+                margin-top: 10px;
+                transform: translateX(15px);
+                //padding:30px;
+                //padding-right: 0; 
+            }
+        }
+    }
+    .solid::before{
+        position: absolute;
+        content:'';
+        border-left: 3px solid rgb(4, 58, 8);
+        height: calc(100% - 10px);
+        top: 5px;
+    }
+    .main{
+        background: rgb(254, 254, 254);
+        padding: 20px;
+        position: relative;
+        h2{
+            background:rgb(218, 235, 208);
+            margin: 0;
+            margin-bottom: 20px;
+            height: 45px;
+            border-bottom: solid 1px rgb(59, 90, 59);
+            color: brown;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+        }
+    }
+    .item-1{
+        display: flex;
+        justify-content: space-between;
+        
+        .row {
+            margin: 0 -10px;
+            .col-md-6 {
+                padding: 0 10px;
+                // &:nth-child(1){
+                //     padding-right: 10px;
+                // }
+                // &:nth-last-child(1){
+                //     padding-left: 10px;
+                // }
+                // &:not(&:nth-child(1), &:nth-last-child(1)){
+                //     padding: 0 10px;
+                // }
+            }
+        }
+        
+      
+        .col-lg-3{
+            /*.qqq{
+                display: flex;
+                justify-content: center;*/
+            }
+           //width: auto;
+            img{
+                width: 100%;
+                //width: 241px;
+            
+            }
+            .txt{
+                //width: 200px;
+                h3{
+                    margin: 15px 0;
+                    color: brown;
+                }
+            }
+        }
+    .container-1{
+        //display: flex;
+        margin: 0;
+        padding-top: 50px;
+        .container-txt{
+            //display: inline-block;
+            
+        }
+        img{
+            display: block;
+            width: 60%;
+            height: 50%;
+            margin: 0 auto;
+            padding-bottom: 20px;
+        }
+        h3{
+            background: rgb(218, 235, 208);
+            color: brown;
+            border-bottom: solid 1px rgb(59, 90, 59);
+            height: 45px;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            //margin-left: 20px;
+            margin-bottom: 30px;
+        }
+        ol{
+            height: 86%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding-left: 20px;
+    
+            margin: 0;
+            li{
+                font-size: 10px;
+                p{
+                    line-height: 2;
+                    padding-left: 10px;
+                }
+            }
+        }
+    
+    }
+    .container-1::before{
+        position: absolute;
+        content:'';
+        border-top: solid 2px rgba(163, 152, 152, 0.493);
+        
+        width: calc( 100% - 40px );
+        height: 100px;
+        top: 64%;
+    }
+    .service{
+        background: rgb(218, 235, 208);
+        
+    
+        //display: flex;
+        //justify-content: space-between;
+        .row{
+            
+            .col-3{
+                padding: 20px;
+                border: solid  rgba(97, 93, 93, 0.548) 1px;
+                h4{
+                    padding-bottom: 20px;
+                    color: rgba(97, 93, 93, 0.548);
+                }
+                p{
+                    line-height: 5px;
+                    color: rgba(97, 93, 93, 0.548);
+                }
+                .friendlink{
+                    //display: flex;
+                    //flex-direction: column;
+                    div{
+                        p{
+                            i{
+                                padding-right: 5px;
+                                font-size: 20px;
+                                color: rgb(53, 102, 24);
+                            }
+                        }
+                        
+                    }
+                   
+    
+                }
+            }
+        }
+    }
+    .copy{
+        background: rgb(53, 102, 24);
+        text-align: center;
+        p{
+            margin: 0;
+            color: aliceblue;
+        }    
+}
+}
+@media (min-width: 992px){
 body{
     width: 100%;
     max-width: 1024px;
@@ -90,7 +383,7 @@ body .navbar-light .navbar-nav .nav-link.active:hover{
     position: relative;
     padding-bottom: 10px;
     //padding: 15px;
-    .col-4{
+    .col-lg-4{
         div{
             padding: 10px 10px 10px 30px;
             float: right;
@@ -152,7 +445,7 @@ body .navbar-light .navbar-nav .nav-link.active:hover{
     
     .row {
         margin: 0 -10px;
-        .col-3 {
+        .col-lg-3 {
             padding: 0 10px;
             // &:nth-child(1){
             //     padding-right: 10px;
@@ -167,7 +460,7 @@ body .navbar-light .navbar-nav .nav-link.active:hover{
     }
     
   
-    .col-3{
+    .col-lg-3{
         /*.qqq{
             display: flex;
             justify-content: center;*/
@@ -191,11 +484,11 @@ body .navbar-light .navbar-nav .nav-link.active:hover{
     margin: 0;
     padding-top: 50px;
     .container-txt{
-        display: inline-block;
+        //display: inline-block;
         
     }
     img{
-        display: inline-block;
+        //display: inline-block;
         width: 50%;
         height: 50%;
     }
@@ -282,4 +575,5 @@ body .navbar-light .navbar-nav .nav-link.active:hover{
         color: aliceblue;
     }
     
+}
 }
